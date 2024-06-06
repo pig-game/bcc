@@ -1,0 +1,22 @@
+<html>
+ <body>
+  <input type="text" id="npt" placeholder="Password">
+  <input type="button" id="btn1" value="Login">
+  <p id="output"></p>
+ </body>
+</html>
+<script>
+const txt1 = document.getElementById('npt');
+const btn1 = document.getElementById('btn1');
+const out1 = document.getElementById('output');
+function fun1() {
+ if (txt1.value == "boystest5") {
+   out1.innerHTML = "Correct. Logging you in...";
+   window.location.replace("https://www.piggame.co.uk/bcc/boystest5.html");
+ }
+ else {
+  out1.innerHTML = "Incrorrect.";
+ }
+}
+btn1.addEventListener('click',fun1);
+</script>
